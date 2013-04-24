@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Web;
+
+namespace App_Code
+{
+    /// <summary>
+    /// Summary description for BlockIP
+    /// </summary>
+    /*public class BlockIP : IHttpModule
+    {
+        HashSet<string> listanegra = new HashSet<string> { "83.213.156.86" };
+        public BlockIP()
+        {
+            //
+            // TODO: Add constructor logic here
+            //
+        }
+
+        #region IHttpModule Members
+
+        public void Dispose()
+        {
+            //clean
+        }
+
+        public void Init(HttpApplication context)
+        {
+            context.BeginRequest += Application_BeginRequest;
+        }
+
+        private void Application_BeginRequest(object source, EventArgs e)
+        {
+            HttpContext context = ((HttpApplication)source).Context;
+            string ipAddress = context.Request.UserHostAddress;
+            if (!IsValidIpAddress(ipAddress))
+            {
+                context.Response.StatusCode = 403; // (Forbidden)
+
+            }
+        }
+
+        private bool IsValidIpAddress(string ipAddress)
+        {
+            return !listanegra.Contains(ipAddress);
+        }
+
+        #endregion
+    }*/
+}
